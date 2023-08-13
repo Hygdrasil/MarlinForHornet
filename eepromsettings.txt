@@ -1,0 +1,41 @@
+M503
+G21    ; Units in mm (mm)
+M149 C ; Units in Celsius
+Filament settings: Disabled
+M200 S0 D1.75
+
+Steps per unit:
+92 X80.12 Y80.12 Z400.00 E418.00
+Maximum feedrates (units/s):
+M203 X300.00 Y300.00 Z40.00 E50.00
+Maximum Acceleration (units/s2):
+M201 X2000.00 Y2000.00 Z100.00 E10000.00
+Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+M204 P800.00 R10000.00 T800.00
+Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>
+M205 B20000.00 S0.00 T0.00 J0.03
+Home offset:
+M206 X0.00 Y0.00 Z0.00
+
+Unified Bed Leveling:
+M420 S1 Z10.00
+Unified Bed Leveling System v1.01 active
+Active Mesh Slot: 1
+EEPROM can hold 38 meshes.
+
+Servo Angles:
+M281 P0 L10 U90
+
+Material heatup parameters:
+M145 S0 H210.00 B60.00 F0
+M145 S1 H235.00 B80.00 F0
+M145 S2 H220.00 B40.00 F0
+PID settings:
+M301 P15.25 I0.97 D59.78
+M304 P92.75 I15.67 D366.04
+LCD Contrast:
+M250 C255
+Z-Probe Offset (mm):
+M851 X-62.00 Y10.00 Z-2.80
+Filament load/unload lengths:
+M603 L570.00 U650.00
